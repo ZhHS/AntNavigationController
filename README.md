@@ -28,5 +28,6 @@ AntNavigationController提供简单API设置导航栏透明度、背景颜色、
 
   ​
 
-![Rendering](/Users/apple/Desktop/2017-03-16 17_08_24.gif)
+
+![Rendering](/Users/apple/Desktop/NavigationDemo/2017-03-16 17_08_24.gif)
 =======
