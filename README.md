@@ -4,8 +4,7 @@ AntNavigationController提供简单API设置导航栏透明度、背景颜色、
 
 # How To Use
 
-- 添加`AntViewController.h` `AntViewController.m  ` `AntNavigationController.h` `AntNavigationController.m`至项目
-
+- 添加`AntViewController.h` `AntViewController.m  ` `AntNavigationController.h` `AntNavigationController.m`至项目中
 - 项目中视图控制器继承`AntViewController`，导航栏继承 `AntNavigationController`
 
 - ```Objective-C
@@ -23,5 +22,9 @@ AntNavigationController提供简单API设置导航栏透明度、背景颜色、
 
 - 支持CocoaPods
 - 支持导航栏图片切换
+<<<<<<< HEAD
 
 ![Rendering](/Users/apple/Desktop/2017-03-16 17_08_24.gif)
+=======
+- 修复潜在bug，优化用户体验
+>>>>>>> 638f26c54caa21ae60d8e73d10647453e177de86
