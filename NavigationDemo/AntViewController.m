@@ -57,7 +57,7 @@
 }
 
 - (void)setNavigationBarColor:(UIColor *)navigationBarColor {
-    self.navigationController.navigationBar.backgroundColor = navigationBarColor;
+    self.navigationController.navigationBar.barTintColor = navigationBarColor;
     objc_setAssociatedObject(self, &_objc_navigationBarColor, navigationBarColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
