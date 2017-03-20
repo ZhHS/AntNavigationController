@@ -26,5 +26,7 @@
 ///导航栏标题颜色
 @property (nonatomic, strong) UIColor *navigationBarTitleColor;
 
+///导航栏图片
+//@property (nonatomic, strong) UIImage *navigationBarImage;
 
 @end

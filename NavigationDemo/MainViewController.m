@@ -20,6 +20,7 @@
     
     // Do any additional setup after loading the view.
     self.navigationBarAlpha = 0.0;
+    self.navigationBarTintColor = [UIColor redColor];
 }
 
 - (IBAction)pushToOtherViewController {
