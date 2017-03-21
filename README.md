@@ -2,6 +2,14 @@
 
 AntNavigationController提供简单API设置导航栏透明度、背景颜色、标题颜色以及填充色，该项目由Objective-C实现，几行代码搞定导航栏相关操作！
 
+# Function
+
+- 一行代码设置导航栏透明度
+- 一行代码设置导航栏填充色
+- 一行代码设置导航栏标题色
+- 一行代码设置导航栏背景色
+- 一行代码设置导航栏背景图
+
 # How To Use
 
 - 添加`AntViewController.h` `AntViewController.m  ` `AntNavigationController.h` `AntNavigationController.m`至项目中
@@ -22,7 +30,7 @@ AntNavigationController提供简单API设置导航栏透明度、背景颜色、
 
 - 支持CocoaPods
 
-- 支持导航栏图片切换
+- 支持导航栏图片切换（已添加）
 
 - 修复潜在bug，优化用户体验
 
