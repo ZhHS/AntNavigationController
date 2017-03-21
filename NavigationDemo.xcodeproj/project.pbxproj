@@ -110,7 +110,7 @@
 		18FF96F41E6FD0290013B47A /* NavigationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				EC08A0911E7699960072D36A /* Custom ViewController */,
+				EC08A0911E7699960072D36A /* AntViewController */,
 				EC08A0981E769D6C0072D36A /* MainViewController.h */,
 				EC08A0991E769D6C0072D36A /* MainViewController.m */,
 				EC08A0921E769A3E0072D36A /* FirstViewController.h */,
@@ -152,7 +152,7 @@
 			path = NavigationDemoUITests;
 			sourceTree = "<group>";
 		};
-		EC08A0911E7699960072D36A /* Custom ViewController */ = {
+		EC08A0911E7699960072D36A /* AntViewController */ = {
 			isa = PBXGroup;
 			children = (
 				184F8AA21E727217001F375B /* AntViewController.h */,
@@ -160,7 +160,7 @@
 				184F8A9F1E7271B3001F375B /* AntNavigationViewController.h */,
 				184F8AA01E7271B3001F375B /* AntNavigationViewController.m */,
 			);
-			name = "Custom ViewController";
+			name = AntViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
