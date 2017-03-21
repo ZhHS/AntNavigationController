@@ -19,6 +19,7 @@ AntNavigationController提供简单API设置导航栏透明度、背景颜色、
       self.navigationBarAlpha = 1.0;
       self.navigationBarTitleColor = [UIColor redColor];
       self.navigationBarColor = [UIColor yellowColor];
+      self.navigationBarImage = [UIImage imageNamed:@"导航栏"];
   }
   ```
 
