@@ -77,6 +77,11 @@
             UIColor *nowBarColor = [self averageColorFromeColor:fromBarColor toColor:toBarColor percent:percentComplete];
             self.navigationBar.barTintColor = nowBarColor;
             
+            //背景图
+//            UIImage *fromBarImage = fromController.navigationBarImage;
+            UIImage *toBarImage = toController.navigationBarImage;
+            [self.navigationBar setBackgroundImage:toBarImage forBarMetrics:UIBarMetricsDefault];
+            
             //填充色
             UIColor *fromTintColor = fromController.navigationBarTintColor;
             UIColor *toTintColor = toController.navigationBarTintColor;
@@ -138,6 +143,7 @@
                     AntViewController *fromVC = [context viewControllerForKey:UITransitionContextFromViewControllerKey];
                     CGFloat nowAlpha = fromVC.navigationBarAlpha;
                     [self setNeedsNavigationBackground:nowAlpha];
+                    [self.navigationBar setBackgroundImage:fromVC.navigationBarImage forBarMetrics:UIBarMetricsDefault];
                     self.navigationBar.tintColor = fromVC.navigationBarTintColor;
                     self.navigationBar.barTintColor = fromVC.navigationBarColor;
                     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:fromVC.navigationBarTitleColor};
@@ -149,6 +155,7 @@
                     AntViewController *toVC = [context viewControllerForKey:UITransitionContextToViewControllerKey];
                     CGFloat nowAlpha = toVC.navigationBarAlpha;
                     [self setNeedsNavigationBackground:nowAlpha];
+                    [self.navigationBar setBackgroundImage:toVC.navigationBarImage forBarMetrics:UIBarMetricsDefault];
                     self.navigationBar.tintColor = toVC.navigationBarTintColor;
                     self.navigationBar.barTintColor = toVC.navigationBarColor;
                     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:toVC.navigationBarTitleColor};
@@ -164,6 +171,7 @@
     if (self.viewControllers.count >= navigationBar.items.count) {
         AntViewController *popToVC = self.viewControllers[self.viewControllers.count - 2];
         [self setNeedsNavigationBackground:popToVC.navigationBarAlpha];
+        [self.navigationBar setBackgroundImage:popToVC.navigationBarImage forBarMetrics:UIBarMetricsDefault];
         self.navigationBar.tintColor = popToVC.navigationBarTintColor;
         self.navigationBar.barTintColor = popToVC.navigationBarColor;
         self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:popToVC.navigationBarTitleColor};
@@ -175,6 +183,7 @@
 - (BOOL)navigationBar:(UINavigationBar *)navigationBar shouldPushItem:(UINavigationItem *)item {
     AntViewController *topVC = (AntViewController *)self.topViewController;
     [self setNeedsNavigationBackground: topVC.navigationBarAlpha];
+    [self.navigationBar setBackgroundImage:topVC.navigationBarImage forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.tintColor = topVC.navigationBarTintColor;
     self.navigationBar.barTintColor = topVC.navigationBarColor;
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:topVC.navigationBarTitleColor};

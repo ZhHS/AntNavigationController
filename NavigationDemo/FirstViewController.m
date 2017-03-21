@@ -23,9 +23,10 @@
     self.navigationBarAlpha = 1.0;
     self.navigationBarColor = [UIColor redColor];
     self.navigationBarTitleColor = [UIColor yellowColor];
+    self.navigationBarImage = [UIImage imageNamed:@"导航栏-再来"];
     
 //    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"导航栏-再来"] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"导航栏-再来"] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"导航栏-再来"] forBarMetrics:UIBarMetricsDefault];
     
 }
 

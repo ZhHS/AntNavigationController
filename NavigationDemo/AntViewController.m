@@ -14,6 +14,7 @@
 
 @property (nonatomic, assign) CGFloat objc_navigationBarAlpha;
 @property (nonatomic, strong) UIColor *objc_navigationBarColor;
+@property (nonatomic, strong) UIImage *objc_navigationBarImage;
 @property (nonatomic, strong) UIColor *objc_navigationBarTintColor;
 @property (nonatomic, strong) UIColor *objc_navigationBarTitleColor;
 
@@ -59,6 +60,22 @@
 - (void)setNavigationBarColor:(UIColor *)navigationBarColor {
     self.navigationController.navigationBar.barTintColor = navigationBarColor;
     objc_setAssociatedObject(self, &_objc_navigationBarColor, navigationBarColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+
+#pragma mark -
+#pragma mark - 背景图
+- (UIImage *)navigationBarImage {
+    UIImage *bgImage = objc_getAssociatedObject(self, &_objc_navigationBarImage);
+    if (!bgImage) {
+        return [UIImage imageNamed:@""];
+    }
+    return bgImage;
+}
+
+- (void)setNavigationBarImage:(UIImage *)navigationBarImage {
+    [self.navigationController.navigationBar setBackgroundImage:navigationBarImage forBarMetrics:UIBarMetricsDefault];
+    objc_setAssociatedObject(self, &_objc_navigationBarImage, navigationBarImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 #pragma mark - 
