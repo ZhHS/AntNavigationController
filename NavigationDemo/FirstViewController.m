@@ -27,6 +27,9 @@
     
 //    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"导航栏-再来"] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
 //    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"导航栏-再来"] forBarMetrics:UIBarMetricsDefault];
+
+    
+
     
 }
 
